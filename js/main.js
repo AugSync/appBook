@@ -8,7 +8,7 @@ function showMenu() {
 }
 
 window.onload = showTitle;
-//getData('http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
+getData('http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
 
 function showTitle() {
     titleName.classList.add('animationName'); 
@@ -69,7 +69,7 @@ function renderMovieList(list, $container) {
 function videoItemTemplate(movie) {
     return (
         `<div class="peliculasPrev">
-                    <img src="${movie.thumbnail}" alt="" class="imgHidde">
+                    <img src="${movie.cover}" alt="" class="imgHidde">
                     <div class="text">
                         <h4>${movie.title}</h4>
                     </div>
