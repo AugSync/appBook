@@ -7,16 +7,8 @@ function showMenu() {
     menu.classList.toggle('itemb-show')
 }
 
-$.getJSON( 'http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=?', function ( myObj ) {
-  
-    var peliList = myObj;
-    console.log(peliList)
-    renderMovieList(peliList, $peliContainer);
-
-} );
-
 window.onload = showTitle;
-//getData('http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
+getData('http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
 
 function showTitle() {
     titleName.classList.add('animationName');
@@ -54,7 +46,7 @@ function getData(url) {
 async function processData(myObj) {
     var peliList = await myObj;
     console.log(peliList)
-    renderMovieList(peliList, $peliContainer);
+    //renderMovieList(peliList, $peliContainer);
 }
 
 function renderMovieList(list, $container) {
