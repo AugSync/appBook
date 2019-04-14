@@ -46,7 +46,7 @@ function getData(url) {
 async function processData(myObj) {
     var peliList = await myObj;
     console.log(peliList)
-    //renderMovieList(peliList, $peliContainer);
+    renderMovieList(peliList, $peliContainer);
 }
 
 function renderMovieList(list, $container) {
