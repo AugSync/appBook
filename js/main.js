@@ -8,7 +8,7 @@ function showMenu() {
 }
 
 window.onload = showTitle;
-getData('http://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
+getData('https://www.etnassoft.com/api/v1/get/?last_week&num_items=25&lang=spanish&callback=processData');
 
 function showTitle() {
     titleName.classList.add('animationName');
