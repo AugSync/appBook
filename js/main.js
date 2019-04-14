@@ -65,7 +65,7 @@ function renderMovieList(list, $container) {
 function videoItemTemplate(movie) {
     return (
         `<div class="peliculasPrev">
-                    <img src="${movie.thumbnail}" alt="" class="imgHidde">
+                    <img src="" alt="" class="imgHidde">
                     <div class="text">
                         <h4>${movie.title}</h4>
                     </div>
