@@ -42,11 +42,15 @@ function getData(url) {
         then replace it with the new script element. */
         head.replaceChild(scriptElement, oldScriptElement);
     }
+    async function processData(myObj) {
+        const API = await myObj;
+        return API;
+    }
 }
 async function processData(myObj) {
     var peliList = await myObj;
     console.log(peliList)
-    //renderMovieList(peliList, $peliContainer);
+    renderMovieList(peliList, $peliContainer);
 }
 
 function renderMovieList(list, $container) {
